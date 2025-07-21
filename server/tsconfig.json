@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "rootDir": ".",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true // Necessary for import if this is not here it will cause an error
+  },
+  "include": ["./**/*"],
+  "exclude": ["node_modules", "client"]
+}
+
+// This is what the tsconfig looks like when it is inside of your server folder

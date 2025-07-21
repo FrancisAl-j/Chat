@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, cupcake;
+}
+
+.form-container {
+  width: min(100% - 25px, 600px);
+}
+
+.chat-container {
+  width: min(100% - 25px, 800px);
+  height: 80svh;
+}
