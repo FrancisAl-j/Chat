@@ -27,8 +27,9 @@ export const messageSlice = createSlice({
   },
 
   extraReducers: (builder) => {
-    builder.addCase(CreateMessageThunk.fulfilled, (state, action) => {
+    builder.addCase(CreateMessageThunk.fulfilled, (state) => {
       //state.messages.push(action.payload);
+      state.messages;
     });
 
     builder.addCase(GetMessagesThunk.pending, (state) => {

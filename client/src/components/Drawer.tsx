@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../redux/Hooks";
 import { useEffect } from "react";
 import { GetRoomsThunk } from "../redux/thunks/roomThunk";
