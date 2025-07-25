@@ -29,7 +29,7 @@ app.use("/api/room", roomRouter);
 //? MESSAGE
 app.use("/api/message", messageRouter);
 
-const PORT = Number(process.env.PORT!) || 3000;
+const PORT = Number(process.env.PORT!) || 4000;
 
 server.listen(PORT, () => {
   console.log(`Port connected to http://localhost:${PORT}`);
