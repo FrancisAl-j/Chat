@@ -59,7 +59,8 @@ const App = () => {
     <Router>
       <Nav />
       <div className="relative flex">
-        <Sidebar />
+        {user && <Sidebar />}
+
         {notif && <MessageNotification message={dataMessage} />}
         <main className="w-full">
           {message && <Success />}
