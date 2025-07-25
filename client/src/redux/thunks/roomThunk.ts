@@ -27,9 +27,7 @@ export const GetRoomsThunk = createAsyncThunk(
   "room/get",
   async (_, { rejectWithValue }) => {
     try {
-      const res = await axios.get(`${baseURL}/get`, {
-        withCredentials: true,
-      });
+      const res = await axios.get(`${baseURL}/get`);
 
       return res.data;
     } catch (error) {

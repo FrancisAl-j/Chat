@@ -12,7 +12,7 @@ const router = Router();
 router.post("/create", verifyUser, createRoom);
 
 // GET
-router.get("/get", verifyUser, getRooms);
+router.get("/get", getRooms);
 router.get("/get/:id", verifyUser, getSpecificRoom);
 
 export default router;
