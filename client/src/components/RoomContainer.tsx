@@ -3,7 +3,7 @@ import Global from "../assets/global.svg";
 import { useAppDispatch } from "../redux/Hooks";
 import { selectRoom } from "../redux/slices/roomSlice";
 
-const RoomContainer = ({ _id, name, description, tags, ownerId }: Room) => {
+const RoomContainer = ({ _id, name, tags }: Room) => {
   const dispatch = useAppDispatch();
 
   const handleSelectRoom = (id: string) => {
