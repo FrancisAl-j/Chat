@@ -31,6 +31,8 @@ export const GetRoomsThunk = createAsyncThunk(
         withCredentials: true,
       });
 
+      console.log(res);
+
       return res.data;
     } catch (error) {
       if (axios.isAxiosError(error)) {
