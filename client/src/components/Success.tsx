@@ -32,7 +32,7 @@ const Success = () => {
   if (!message) return null;
 
   return (
-    <div className="bg-white shadow-xl w-[300px] border-2 rounded-lg fixed bottom-5 right-4">
+    <div className="bg-white shadow-xl w-[300px] border-2 rounded-lg fixed bottom-5 right-4 z-50">
       <header className="flex justify-end">
         <p onClick={handleClose} className="font-bold cursor-pointer px-1">
           x
