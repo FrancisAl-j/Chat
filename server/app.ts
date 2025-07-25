@@ -13,7 +13,7 @@ import { app, server } from "./utils/socket";
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://chatglobal-socket.vercel.app/",
     credentials: true,
   })
 );
