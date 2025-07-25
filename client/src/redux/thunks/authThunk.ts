@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import type { SigninData, SignupData } from "../Interfaces";
 import axios from "axios";
 
-const baseURL: string = "http://localhost:3000/api/auth";
+const baseURL: string = "https://chat-service-twai.onrender.com/api/auth";
 
 export const RegisterThunk = createAsyncThunk(
   "auth/register",

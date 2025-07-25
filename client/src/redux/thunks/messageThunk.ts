@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import type { MessageData } from "../Interfaces";
 
-const baseURL: string = "http://localhost:3000/api/message";
+const baseURL: string = "https://chat-service-twai.onrender.com/api/message";
 
 export const CreateMessageThunk = createAsyncThunk(
   "message/create",

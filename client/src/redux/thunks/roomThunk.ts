@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import type { RoomData } from "../Interfaces";
 
-const baseURL: string = "http://localhost:3000/api/room";
+const baseURL: string = "https://chat-service-twai.onrender.com/api/room";
 
 export const CreateRoomThunk = createAsyncThunk(
   "room/create",
