@@ -96,7 +96,11 @@ export const checkAuth = async (req: CustomRequest, res: Response) => {
 
 export const logout = async (req: CustomRequest, res: Response) => {
   try {
-    res.cookie("token", "", { maxAge: 0 });
+    res.clearCookie("token", {
+      httpOnly: true,
+      secure: true,
+      sameSite: "none",
+    });
 
     res.status(200).json({ message: "User logged out." });
   } catch (error) {
