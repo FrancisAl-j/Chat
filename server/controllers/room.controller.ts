@@ -24,7 +24,7 @@ export const createRoom = async (req: CustomRequest, res: Response) => {
 
 export const getRooms = async (req: CustomRequest, res: Response) => {
   try {
-    const rooms = await Room.find();
+    const rooms = await Room.find().populate("ownerId");
     if (rooms.length === 0) {
       res.status(404).json({ message: "Rooms not found." });
       return;
