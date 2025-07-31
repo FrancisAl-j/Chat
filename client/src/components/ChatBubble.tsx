@@ -6,11 +6,13 @@ const ChatBubble = ({
   message,
   username,
   date,
+  image,
 }: {
   userId: string;
   message: string;
   username: string;
   date?: Date | undefined | string;
+  image?: string;
 }) => {
   const { user } = useAppSelector((state) => state.auth);
   return (
@@ -39,7 +41,8 @@ const ChatBubble = ({
             userId === user?._id ? "" : "chat-bubble-neutral"
           }`}
         >
-          {message}
+          {image && <img src={image} alt="Chat image" className="w-3xs h-28" />}
+          <p>{message}</p>
         </div>
       </div>
     </>

@@ -15,6 +15,9 @@ const MessageSchema = new Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "Room",
     },
+    image: {
+      type: String,
+    },
     seen: [
       {
         type: mongoose.Schema.Types.ObjectId,

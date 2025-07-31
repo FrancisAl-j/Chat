@@ -2,6 +2,11 @@ import { Server } from "socket.io";
 import http from "http";
 import express from "express";
 
+/**
+ * https://chatglobal-socket.vercel.app
+ * http://localhost:5174
+ */
+
 // Initialize the app
 const app = express();
 

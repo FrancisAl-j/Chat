@@ -4,11 +4,12 @@ import { CustomRequest } from "../utils/interfaces";
 import { io } from "../utils/socket";
 
 export const createMessage = async (req: CustomRequest, res: Response) => {
-  const { message, roomId } = req.body;
+  const { message, roomId, image } = req.body;
   try {
     const newMesage = new Message({
       message,
       roomId,
+      image,
       senderId: req.user._id,
     });
 

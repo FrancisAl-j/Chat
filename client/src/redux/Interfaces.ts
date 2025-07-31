@@ -60,6 +60,7 @@ export interface RoomData {
 export interface MessageData {
   message: string;
   roomId: string | null;
+  image?: string;
 }
 
 export interface Message {
@@ -68,6 +69,7 @@ export interface Message {
   senderId: User;
   roomId: string;
   seen: string[];
+  image?: string;
 
   createdAt?: string;
   updatedAt?: string;

@@ -11,6 +11,12 @@ import roomRouter from "./routers/room.router";
 import messageRouter from "./routers/message.router";
 import { app, server } from "./utils/socket";
 
+/**
+ * URL
+ * https://chatglobal-socket.vercel.app
+ * http://localhost:5174/
+ */
+
 app.use(
   cors({
     origin: "https://chatglobal-socket.vercel.app",

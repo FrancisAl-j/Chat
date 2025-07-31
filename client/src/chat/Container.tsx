@@ -36,6 +36,7 @@ const Container = () => {
                   message={message.message}
                   username={message.senderId.username}
                   date={message.createdAt}
+                  image={message.image}
                 />
               );
             })}

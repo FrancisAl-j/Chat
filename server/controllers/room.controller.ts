@@ -54,3 +54,5 @@ export const getSpecificRoom = async (req: CustomRequest, res: Response) => {
     }
   }
 };
+
+// TODO: Create a new Component for creating new chat
